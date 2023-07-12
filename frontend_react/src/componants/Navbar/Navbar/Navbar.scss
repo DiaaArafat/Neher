@@ -1,0 +1,152 @@
+.app__navbar {
+  width: 100%;
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+}
+.red-bg {
+  --tw-bg-opacity: 1;
+  background-color: #ff0050; 
+}
+.app__navbar-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    width: 200px;
+    @media screen and (min-width: 2000px) {
+      height: 400px;
+    }
+  }
+}
+.app__navbar-links {
+  flex: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  li {
+    font-size: 1rem;
+    margin: 0 1rem;
+    cursor: pointer;
+
+    flex-direction: column;
+  }
+  div {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    transition: all ease-in-out 0.3s;
+  }
+  a {
+    color: var(--gray-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all ease-in-out 0.3s;
+  }
+
+ @media screen and (max-width:900px) {
+  display: none;
+  
+ } 
+
+}
+.Home {
+  &:hover {
+    div {
+      background: var(--green-logo);
+    }
+  }
+}
+.HomeButton {
+  &:hover {
+    color: var(--green-logo);
+  }
+}
+.About {
+  &:hover {
+    div {
+      background: var(--orange-logo);
+    }
+  }
+}
+.UsButton {
+  &:hover {
+    color: var(--orange-logo);
+  }
+}
+.Portfolio {
+  &:hover {
+    div {
+      background: var(--red-logo);
+    }
+  }
+}
+.PortfolioButton {
+  &:hover {
+    color: var(--red-logo);
+  }
+}
+.Services {
+  &:hover {
+    div {
+      background: var(--blue-logo);
+    }
+  }
+}
+.ServicesButton {
+  &:hover {
+    color: var(--blue-logo);
+  }
+}
+.Clients {
+  &:hover {
+    div {
+      background: var(--yellow-logo);
+    }
+  }
+}
+.ClientsButton {
+  &:hover {
+    color: var(--yellow-logo);
+  }
+
+}
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; 
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+  }
+
+.motionDiv{
+  position: fixed;
+  top: 0;
+  bottom: 0; 
+  right: 0;
+  z-index: 0;
+  padding: 1rem;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; 
+  flex-direction: column;
+  background-color: #ff0050;
+  background-size: cover;
+  background-repeat: repeat;  
+}
