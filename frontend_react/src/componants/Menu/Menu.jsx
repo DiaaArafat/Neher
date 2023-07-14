@@ -1,10 +1,12 @@
 import * as React from "react";
 import { useRef } from "react";
+import { useState } from "react";
+
 import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
-import "/Users/diaa_mac/Desktop/Neher/frontend_react/src/componants/Navbar/Menu/style.scss";
+import "/Users/diaa_mac/Desktop/Neher/frontend_react/src/componants/Menu/style.scss";
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -40,7 +42,7 @@ function Menu () {
       className="nav-menu"
     >
       <motion.div className="background" variants={sidebar} />
-      <Navigation />
+      <Navigation toggle={isOpen}/>
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

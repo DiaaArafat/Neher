@@ -7,7 +7,7 @@
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  position: fixed;
+  position: sticky;
 }
 .red-bg {
   --tw-bg-opacity: 1;
@@ -49,6 +49,7 @@
   }
   a {
     color: var(--gray-color);
+    opacity: 1;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500;
@@ -65,6 +66,7 @@
   &:hover {
     div {
       background: var(--green-logo);
+      
     }
   }
 }

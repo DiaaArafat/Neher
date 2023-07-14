@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
 :root {
   --font-base: "DM Sans", sans-serif;
 
@@ -11,8 +13,8 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
   --green-logo: #0C7939;
-  --orange-logo:#FA6D07;
-  --red-logo:#B0212C;
+  --orange-logo:#ff6a00;
+  --red-logo:#e72737;
   --blue-logo:#264588;
   --yellow-logo:#FBB825;
 
@@ -25,17 +27,26 @@
   scroll-behavior: smooth;
   
 }
-body{
-  background-color: #ff0050 ;
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 30 60 / var(--tw-bg-opacity));
 }
-.bg-red{
-  
+.standig {
   background-color: #ff0050 !important;
-
+  height: 20vw;
+  width: 100%;
+  position:absolute;
+  margin-top: 450px;
 }
 
-.imgtest {
-  width: 1000px;
-  position: relative;
-z-index: 1000;
-}
+  @media screen and (max-width:900px) {
+    .standig {
+      height: 36vw;
+      margin-top: 350px;
+
+    }
+  }

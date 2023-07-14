@@ -1,8 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
-
-
+import { Suspense } from "react";
+import {DelayedRender} from "react"
 const variants = {
   open: {
     transition: { staggerChildren: 0.07, delayChildren: 0.2 }
@@ -12,10 +12,10 @@ const variants = {
   }
 };
 
-export const Navigation = () => (
-  <motion.ul variants={variants} className="ul-menu">
-   
-      <MenuItem />
+export const Navigation = ({toggle}) => (
+<motion.ul variants={variants} className="ul-menu">
+      { (<MenuItem />)}
+
   </motion.ul>
 );
 
