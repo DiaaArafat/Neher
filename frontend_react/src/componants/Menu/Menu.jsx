@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useRef } from "react";
-import { useState } from "react";
+import { useEffect } from "react";
 
-import { motion, sync, useCycle } from "framer-motion";
+import { motion, useCycle } from "framer-motion";
 import { useDimensions } from "./use-dimensions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
@@ -32,7 +32,21 @@ function Menu () {
   const [isOpen, toggleOpen] = useCycle(false, true);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
-
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        toggleOpen();
+      }
+    };
+  
+    if (isOpen) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+  
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, [containerRef, isOpen, toggleOpen]);
   return (
     <motion.nav
       initial={false}

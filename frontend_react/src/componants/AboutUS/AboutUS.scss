@@ -1,0 +1,103 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+.aboutUS-photo {
+  position: relative;
+  width: 600px;
+
+  margin-top: 140px;
+  margin-left: 150px;
+  @media screen and (max-width: 900px) {
+    width: 300px;
+    margin-left: 0px;
+    margin-top: 40px;
+
+    margin-right: 30px;
+  }
+}
+
+.aboutUS-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  @media screen and (max-width: 900px) {
+    margin-top: 20px;
+  }
+}
+.aboutUS-header {
+  position: relative;
+  left: 80px;
+  font-family: "Passion One";
+  color: var(--blue-logo);
+  font-size: 3rem;
+  @media screen and (max-width: 900px) {
+    font-size: 2rem;
+    left: 0px;
+    margin-top: 20px;
+
+  }
+}
+.aboutUS-small-paragraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  position: relative;
+  font-family: var(--font-base);
+  left: 80px;
+  font-size: 1rem;
+  @media screen and (max-width: 900px) {
+    font-size: 0.7rem;
+    left: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 300px;
+  }
+}
+.button-about {
+  position: relative;  
+  align-self: center;
+  margin-left: 160px;
+  margin-top: 20px;
+  font-family: var(--font-base);
+  padding: 1.1em 2.6em;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  @media screen and (max-width:900px) {
+    margin-left: 0px;
+    font-size: 0.5rem;
+
+
+    
+  }
+  &:hover {
+    background-color: var(--green-logo);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.7);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  &:active {
+    transform: translateY(-1px);
+  }
+}
