@@ -21,10 +21,13 @@ function DynamicText() {
 
 
     })
+    useEffect(() => {
+        window.AOS.init();
+      }, []);
 
 
     return (
-        <div className='dynamicText'>
+        <div className='dynamicText'  data-aos="fade-down">
             <p>
                 Neher <motion.span className='change' ref={Ref}
 

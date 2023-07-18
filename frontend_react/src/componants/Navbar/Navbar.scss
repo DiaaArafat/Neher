@@ -90,25 +90,25 @@
 .Portfolio {
   &:hover {
     div {
-      background: var(--red-logo);
+      background: var(--blue-logo);
     }
   }
 }
 .PortfolioButton {
   &:hover {
-    color: var(--red-logo);
+    color: var(--blue-logo);
   }
 }
 .Services {
   &:hover {
     div {
-      background: var(--blue-logo);
+      background: var(--red-logo);
     }
   }
 }
 .ServicesButton {
   &:hover {
-    color: var(--blue-logo);
+    color: var(--red-logo);
   }
 }
 .Clients {

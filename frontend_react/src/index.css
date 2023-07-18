@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
-
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
 :root {
   --font-base: "DM Sans", sans-serif;
   --font-titels:"Passion One";
@@ -18,7 +18,7 @@
   --red-logo:#e72737;
   --blue-logo:#264588;
   --yellow-logo:#FBB825;
-  --red-backgorund-color:#ff0050;
+  --red-background-color:#ff0050;
 
 
 }
@@ -56,3 +56,6 @@
 
     }
   }
+  body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}

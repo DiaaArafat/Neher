@@ -1,6 +1,7 @@
 .app {
   background-color: var(--primary-color);
   font-family: var(--font-base);
+  overflow-x: hidden;
 }
 
 .app__whitebg {
@@ -191,7 +192,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 73%;
+  width: 80%;
   overflow: hidden;
   margin-left: 80px;
   z-index: 10;

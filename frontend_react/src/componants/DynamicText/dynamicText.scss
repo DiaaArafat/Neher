@@ -7,11 +7,11 @@
     justify-content: center;
     color: var(--primary-color);
     font-family: "Passion One";
-    font-size: 4rem;
+    font-size: 6rem;
     text-align: center;
     @media screen and (max-width: 900px) {
       flex-direction: column;
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 
