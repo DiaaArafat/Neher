@@ -13,7 +13,7 @@ function Services() {
   return (
 
     <div className='servicesMain'>
-        <h1 className='servicesHeader' data-aos="fade-down" >Services</h1>
+        <h1 className='servicesHeader' data-aos="fade-down"data-aos-duration="1200" >Services</h1>
         <div className='serviceCards'>
           <Card card={card} title={"Animasyon"} fade={"fade-right"} img={AnimationIcon}/>
           <Card card={card} title={"Prodüksiyon"} fade={"fade-up"} imxg={AnimationIcon}/>

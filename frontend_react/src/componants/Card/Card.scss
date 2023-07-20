@@ -1,6 +1,8 @@
 .card {
   width: 350px;
   height: 350px;
+  overflow: hidden;
+  white-space: pre-line;
   border-radius: 44px;
   background: rgba(211, 211, 211, 0);
   background: linear-gradient(145deg, #ff6b6b, #ff0050 );
@@ -8,10 +10,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   flex-direction: column;
   transition:all 0.3s ease-in-out;
   border: 0rem solid #ffffff00;
-
+  @media screen and (max-width:900px) {
+    width: 250px;
+  height: 250px;
+  }
 
   h1 {
     font-family: var(--font-base);
@@ -23,14 +29,22 @@
   img{
     border-radius: 60px;
     width: 100px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @media screen and (max-width:900px) {
+      width: 70px;
+   
+    }
   }
   p{
     text-align: center;
-    color: #ffff;
-    margin-top: 20px;
+    color: #ffffff;
+    margin-top: 7px;
     width: 300px;
+    white-space: pre-line;
+    @media screen and (max-width:900px) {
+      font-size: 0.8rem;
+   
+    }
   }
   &:hover{
     border: 0.2rem solid #ffffff;

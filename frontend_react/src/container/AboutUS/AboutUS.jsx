@@ -13,15 +13,7 @@ function AboutUS() {
             About US
           </h1>
           <p className="aboutUS-small-paragraph" data-aos="fade-right">
-            Neher Prodüksiyon, animasyon sektörünün Türkiye’de yeni yeni
-            gelişmeye başladığı dönemde, animasyon prodüksiyon alanında yaptığı
-            çalışmalar ile adını duyurdu. Kuleli Askeri Lisesi’nin tanıtım filmi
-            ile başlayan bu serüven, bugün İstanbul’un tanıtımına büyük değer
-            katan ”İstanbul Muhafızları” Animasyon filmi ile devam etmektedir.
-            Her bölümü 13 dakika olup, toplamda 52 bölümden oluşan, İstanbul
-            Muhafızları, 2016 yılında TRT Çocuk kanalında yayına girmiştir. 2014
-            yılında “TÜRKLER BELGESELİ” projesinde dramatize sahnelerin çekimi
-            ile ilk büyük ölçekli çalışmasını yapmıştır. 2015 yılı içerisinde
+          The world is made up of various colors. These colors are what make the world beautiful. Our main objective is to carry out activities which incorporate all of the colors of the world. We have been carrying out projects in the fields of animation, documentary, cinema films and post-production and production at our Istanbul-based studio for over 10 years.
           </p>
           <div data-aos="fade-up" className="button-holder" data-aos-duration="1000">
           <button className="button-about" >
