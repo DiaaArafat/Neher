@@ -36,12 +36,19 @@ function Menu () {
     const handleOutsideClick = (event) => {
       if (containerRef.current && !containerRef.current.contains(event.target)) {
         toggleOpen();
+              document.body.style.overflow = 'auto';
+
       }
     };
   
     if (isOpen) {
       document.addEventListener("click", handleOutsideClick);
+      document.body.style.overflow = 'hidden';
     }
+    else {
+      document.body.style.overflow = 'auto';
+    }
+  
   
     return () => {
       document.removeEventListener("click", handleOutsideClick);
@@ -56,7 +63,7 @@ function Menu () {
       className="nav-menu"
     >
       <motion.div className="background" variants={sidebar} />
-      <Navigation toggle={isOpen}/>
+       <Navigation toggle={isOpen} close={() => toggleOpen()} />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

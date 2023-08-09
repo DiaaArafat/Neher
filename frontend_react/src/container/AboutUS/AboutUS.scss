@@ -2,7 +2,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  min-height: 100vh;
+  @media screen and (max-width: 900px) {
+    min-height: 80vh;
+    padding-top: 100px;
+
+  }
+  @media screen and (min-width: 1024px) and (max-width:1100px) 
+{
+  min-height: 80vh;
+
+}
 }
 .Content {
   display: flex;
@@ -12,13 +23,18 @@
   @media screen and (max-width: 900px) {
     flex-direction: column;
   }
+  @media screen and (min-width: 1024px) and (max-width:1100px) 
+{
+  flex-direction: column;
+}
 }
 .aboutUS-photo {
   position: relative;
   width: 600px;
 
   margin-top: 140px;
-  margin-left: 150px;
+  margin-left: 100px;
+  margin-right: 40px;
   @media screen and (max-width: 900px) {
     width: 300px;
     margin-left: 0px;
@@ -34,7 +50,6 @@
   align-items: start;
   flex-direction: column;
   @media screen and (max-width: 900px) {
-    margin-top: 20px;
   }
 }
 .aboutUS-header {
@@ -52,7 +67,6 @@
 .aboutUS-small-paragraph {
   margin-top: 30px;
   margin-bottom: 30px;
-
   position: relative;
   font-family: var(--font-base);
   left: 80px;
@@ -64,9 +78,18 @@
     margin-bottom: 10px;
     max-width: 300px;
   }
+  @media screen and (min-width: 1024px) and (max-width:1100px) 
+{ margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 600px;
+}
 }
 .button-about {
-  
+  @media screen and (max-width: 1024px) {
+    margin-bottom: 30px;
+    padding: 1.3em 5em;
+  }
   position: relative;
   align-self: center;
   margin-left: 160px;
@@ -82,7 +105,7 @@
   border-radius: 45px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: all 0.25s ease-in-out ;
+  transition: all 0.25s ease-in-out;
 
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* default box-shadow */
   outline: none;
@@ -101,10 +124,22 @@
     transform: translateY(-1px);
   }
 }
-.button-holder{
+.button-holder {
   margin-left: 70px;
-  @media screen and (max-width:900px) {
+  @media screen and (max-width: 900px) {
     margin-left: 50px;
-
+  }
+  @media screen and (max-width: 1024px) {
+    margin-left: 0px;
+  }
+}
+.leftSideContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  @media screen and (max-width: 900px) {
+    margin-right: auto;
   }
 }

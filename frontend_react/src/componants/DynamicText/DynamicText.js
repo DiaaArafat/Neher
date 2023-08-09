@@ -27,7 +27,7 @@ function DynamicText() {
 
 
     return (
-        <div className='dynamicText'  data-aos="fade-down">
+        <div className='dynamicText'>
             <p>
                 Neher <motion.span className='change' ref={Ref}
 

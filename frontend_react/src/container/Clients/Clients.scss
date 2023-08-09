@@ -1,10 +1,21 @@
 .clients-container {
+  min-height: 100vh;
+  margin-top: 20px;
+  @media screen and (min-width: 1024px) and (max-width:1100px) 
+{
+  min-height: 70vh;
 
+}
+@media screen and (max-width:900px) 
+{
+  min-height: 60vh;
+padding-top: 100px;
+}
+  margin-bottom: 40px;
     display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  
+  flex-direction: row;
   h1 {
     margin-top: 40px;
     position: relative;
@@ -39,11 +50,25 @@
 }
 .cards-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   width: 90%;
   @media screen and (max-width:900) {
+
     width: 100%;
   }
+  @media screen and (min-width:1024)  and (min-width:1100px) {
+
+    width: 100%;
+  }
+
+
+}
+.leftSideContentClients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
 }

@@ -1,0 +1,232 @@
+.landingSideNav {
+  overflow-x: hidden;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  position: relative;
+  padding: 1rem;
+  right: 0px;
+  z-index: 90000;
+  .app__navigation-dot {
+    width: 15px;
+    overflow-x: hidden;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ff6b6b, #ff0050);
+    margin: 1.3rem;
+
+    box-shadow: 0px 0px 0px rgb(255, 88, 88);
+    &:hover {
+      background: var(--yellow-logo);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+    padding: 0rem;
+  }
+}
+.aboutSideNav {
+  overflow-x: hidden;
+  display: flex;
+  margin-left: auto;
+
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-right: 15px;
+  margin-left: auto;
+  padding: 1rem;
+
+  z-index: 90000;
+  @media screen and (max-width: 900px) {
+    padding: 0;
+    display: none;
+    transform: scale(0);
+  }
+  
+
+  .app__navigation-dot {
+    width: 15px;
+    overflow-x: hidden;
+
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ff6b6b, #ff0050);
+    margin: 1.3rem;
+    &:hover {
+      background: var(--yellow-logo);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+    
+}
+}
+.servicesSideNav {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  right: 0px;
+  margin-top: 30px;
+  margin-left: auto;
+
+  z-index: 90000;
+  align-self: center;
+  .app__navigation-dot {
+    width: 15px;
+    overflow-x: hidden;
+
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ff0000, #ff0050);
+    margin: 1.3rem;
+
+    box-shadow: 0px 0px 0px rgb(255, 88, 88);
+    &:hover {
+      background: var(--yellow-logo);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (max-width: 900px) {
+      padding: 0rem;
+      display: none;
+      margin-right: 0;
+    }
+  }
+}
+.clinetsSideNav {
+  overflow-x: hidden;
+  margin-left: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  right: 0px;
+  z-index: 90000;
+  .app__navigation-dot {
+    width: 15px;
+    overflow-x: hidden;
+
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ff6b6b, #ff0050);
+    margin: 1.3rem;
+
+    box-shadow: 0px 0px 0px rgb(255, 88, 88);
+    &:hover {
+      background: var(--yellow-logo);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+  @media screen and (max-width: 900px) {
+    padding: 0rem;
+    display: none;
+    margin-right: 0;
+    transform: scale(0);
+    
+  }
+}
+.portfolioSideNav {
+  overflow-x: hidden;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  right: 0px;
+  z-index: 90000;
+  .app__navigation-dot {
+    width: 15px;
+    overflow-x: hidden;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ff6b6b, #ff0050);
+    margin: 1.3rem;
+    box-shadow: 0px 0px 0px rgb(255, 88, 88);
+    &:hover {
+      background: var(--yellow-logo);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    padding: 0rem;
+    display: none;
+    margin-right: 0;
+    transform: scale(0);
+    
+  }
+}
+.contactSideNav {
+  overflow-x: hidden;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 1rem;
+  right: 0px;
+  z-index: 90000;
+  .app__navigation-dot {
+    width: 15px;
+    overflow-x: hidden;
+
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #ff6b6b, #ff0050);
+    margin: 1.3rem;
+
+    box-shadow: 0px 0px 0px rgb(255, 88, 88);
+    &:hover {
+      background: var(--yellow-logo);
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 20px;
+      height: 20px;
+    }
+
+  }
+  @media screen and (max-width: 900px) {
+    padding: 0rem;
+    display: none;
+    margin-right: 0;
+    transform: scale(0);
+    
+  }
+}

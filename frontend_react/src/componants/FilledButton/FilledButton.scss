@@ -1,0 +1,82 @@
+.Fbutton {
+  font-family: "Angkor", cursive;
+  font-size: 0.9rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  background: #c13584;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #c13584;
+  }
+}
+
+.Fbutton:hover::before {
+  transform: scaleX(1);
+}
+
+.Fbutton .Fbutton-content {
+  position: relative;
+}
+
+.Fbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+
+  background: white;
+
+  transition: all 0.475s;
+}
+
+.SmallFbutton {
+  font-family: var(--font-titels);
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  height: 1.8rem;
+  padding: 0 1.7rem;
+  border-radius: 1.5rem;
+  background: #c13584;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    color: #c13584;
+  }
+}
+.SmallFbutton:hover::before {
+  transform: scaleX(1);
+}
+
+.SmallFbutton .Fbutton-content {
+  position: relative;
+}
+
+.SmallFbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+
+  background: white;
+
+  transition: all 0.475s;
+}

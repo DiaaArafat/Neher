@@ -1,22 +1,21 @@
 .card {
-  width: 350px;
-  height: 350px;
+  width: 330px;
+  height: 330px;
   overflow: hidden;
   white-space: pre-line;
   border-radius: 44px;
   background: rgba(211, 211, 211, 0);
-  background: linear-gradient(145deg, #ff6b6b, #ff0050 );
-  box-shadow: 2px 3px 3px #ba2f2f, 2px 3px 3px #ff4949;
+  background: #155263;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   flex-direction: column;
-  transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border: 0rem solid #ffffff00;
-  @media screen and (max-width:900px) {
+  @media screen and (max-width: 900px) {
     width: 250px;
-  height: 250px;
+    height: 250px;
   }
 
   h1 {
@@ -24,36 +23,33 @@
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 10;
-        color: aliceblue;
+    color: aliceblue;
   }
-  img{
+  img {
     border-radius: 60px;
     width: 100px;
     margin-bottom: 10px;
-    @media screen and (max-width:900px) {
+    @media screen and (max-width: 900px) {
       width: 70px;
-   
     }
   }
-  p{
+  p {
     text-align: center;
     color: #ffffff;
     margin-top: 7px;
     width: 300px;
     white-space: pre-line;
-    @media screen and (max-width:900px) {
+    @media screen and (max-width: 900px) {
       font-size: 0.8rem;
-   
     }
   }
-  &:hover{
+  &:hover {
     border: 0.2rem solid #ffffff;
     scale: 1.1;
   }
-@media screen and (max-width:900px) {
+  @media screen and (max-width: 900px) {
     margin-top: 30px;
-    
-}
+  }
 }
 
 .avatar {
@@ -74,7 +70,6 @@
 
   align-items: center;
   width: 100px;
-
 }
 
 .info-1,
@@ -106,6 +101,18 @@
   height: 18px;
   margin: 10px 0 0 20px;
 }
-.serviceLink{
-    text-decoration: none;
+.serviceLink {
+  text-decoration: none;
+}
+.yellowColor {
+  background: linear-gradient(to top, #fab41d, #fcd77a);
+  box-shadow: 10px 10px 3px #0000005f, 5px 20px 3px #12000012;
+}
+.blueColor {
+  background: linear-gradient(to top, #264588, #6e88b3);
+  box-shadow: 10px 10px 3px #0000005f, 5px 20px 3px #12000012;
+}
+.greenColor {
+  background: linear-gradient(to top, #0c7939, #4caf80);
+  box-shadow: 10px 10px 3px #0000005f, 5px 20px 3px #12000012;
 }

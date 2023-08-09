@@ -1,0 +1,83 @@
+.social-buttons2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 15px #00000027;
+  padding: 15px 10px;
+  border-radius: 5em;
+  max-width: 400px;
+}
+
+.social-button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #00000027;
+  transition: 0.3s ease-in-out;
+}
+
+.social-button2:hover {
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 6px 3px #00000027;
+}
+
+.social-buttons2 svg {
+  transition: 0.3s;
+  height: 20px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.facebook svg {
+  fill: #f2f2f2;
+}
+
+.facebook:hover svg {
+  fill: #3b5998;
+}
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.youtube svg {
+  width: 25px;
+  height: 25px;
+  fill: #f2f2f2;
+}
+
+.youtube:hover svg {
+  fill: #FF0000;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.linkedin svg {
+  fill: #f2f2f2;
+}
+
+.linkedin:hover svg {
+  fill: #0077b5;
+}
+
+.instagram2 {
+  background-color: #c13584;
+}
+
+.instagram2 svg {
+  fill: #f2f2f2;
+}
+
+.instagram2:hover svg {
+  fill: #c13584;
+}
