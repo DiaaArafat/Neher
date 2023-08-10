@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 const variants = {
   open: {
@@ -47,13 +48,13 @@ export const MenuItem = ({ i, toggle }) => {
           key={item}
         >
           <div />
-          <a
+          <NavLink
             className={`${item + "Button"}`}
-            href={`#${item}`}
+            to={`${item}`}
             onClick={toggle}
           >
             {item}
-          </a>
+          </NavLink>
         </motion.li>
       ))}
 

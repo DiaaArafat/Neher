@@ -19,7 +19,6 @@ function ContactUS() {
           src={require("../../asseets/images/Wave.png")}
           alt=""
           data-aos="fade-up"
-     data-aos-anchor-placement="center-center"
           data-aos-duration="1000"
         />
         <div

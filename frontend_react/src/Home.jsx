@@ -10,21 +10,20 @@ import ContactUS from './container/ContactUS/ContactUS'
 import Footer from './container/Footer/Footer'
 import NavigationDots from './componants/NavigationDots/NavigationDots'
 import MyMap from './componants/Map/MyMap'
-const App = () => {
+import ErrorPage from './container/ErrorPage/ErrorPage'
+const Home = () => {
 
     return (
 
         <div className="app bg-red">
-            <Navbar  />
             <LandingPage />
             <AboutUS/>
             <Services/>
             <Clients/>
             <PortfolioSection/>
             <ContactUS />
-            <Footer/>
         </div>
     )
 }
 
-export default App
+export default Home

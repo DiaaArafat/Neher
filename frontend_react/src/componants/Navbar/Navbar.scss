@@ -1,12 +1,15 @@
-.navbar{
-  position: static; 
-top: 0;
-@media screen and (max-width:900px) {
-  position:fixed ;
-  z-index: 99999;
-  width: 100%;
-  padding-bottom: 100px;
-}
+.navbar {
+  font-family: var(--font-base);
+
+  position: static;
+  top: 0;
+  @media screen and (max-width: 900px) {
+    position: sticky;
+    height: 100px;
+    z-index: 99999;
+    width: 100%;
+    padding-bottom: 100px;
+  }
 }
 .app__navbar {
   width: 100%;
@@ -18,16 +21,15 @@ top: 0;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-    @media screen and (max-width: 900px) {
-      position: -webkit-sticky; /* Safari */
+  @media screen and (max-width: 900px) {
+    position: -webkit-sticky; /* Safari */
 
-      position: sticky;
-
+    position: sticky;
   }
 }
 .red-bg {
   --tw-bg-opacity: 1;
-  background-color: #ff0050; 
+  background-color: #ff0050;
 }
 .app__navbar-logo {
   display: flex;
@@ -41,10 +43,7 @@ top: 0;
     @media screen and (min-width: 3000px) {
       width: 500px;
       height: 200px;
-
-     
     }
-
   }
 }
 .app__navbar-links {
@@ -54,8 +53,8 @@ top: 0;
   align-items: center;
   list-style: none;
   margin-right: 100px;
-  white-space: nowrap; 
-    li {
+  white-space: nowrap;
+  li {
     font-size: 1rem;
     margin: 0 1rem;
     cursor: pointer;
@@ -64,7 +63,6 @@ top: 0;
     @media screen and (min-width: 3000px) {
       font-size: 3rem;
       margin: 0 2rem;
-
     }
     @media screen and (min-width: 1300px) {
       font-size: 1.5rem;
@@ -88,20 +86,17 @@ top: 0;
     transition: all ease-in-out 0.3s;
   }
 
- @media screen and (max-width:900px) {
-  display: none;
-  
- } 
- @media screen and (max-width: 1024px) {
-  margin-right: 50px;
-    
- }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    margin-right: 50px;
+  }
 }
 .home {
   &:hover {
     div {
       background: var(--green-logo);
-      
     }
   }
 }
@@ -109,6 +104,9 @@ top: 0;
   &:hover {
     color: var(--green-logo);
   }
+}
+.homeActive {
+  color: var(--green-logo) !important;
 }
 .about {
   &:hover {
@@ -122,6 +120,10 @@ top: 0;
     color: var(--orange-logo);
   }
 }
+.usActive {
+  color: var(--orange-logo) !important;
+}
+
 .portfolio {
   &:hover {
     div {
@@ -131,9 +133,13 @@ top: 0;
 }
 .portfolioButton {
   &:hover {
-    color: var(--yellow-logo);
+    color: var(--yellow-logo) !important ;
   }
 }
+.portfolioActive {
+  color: var(--yellow-logo) !important;
+}
+
 .services {
   &:hover {
     div {
@@ -146,6 +152,10 @@ top: 0;
     color: var(--red-logo);
   }
 }
+.servicesActive {
+  color: var(--red-logo) !important;
+}
+
 .clients {
   &:hover {
     div {
@@ -157,6 +167,9 @@ top: 0;
   &:hover {
     color: var(--blue-logo);
   }
+}
+.clientsActive {
+  color: var(--blue-logo) !important;
 }
 .contact {
   &:hover {
@@ -170,21 +183,23 @@ top: 0;
     color: var(--green-logo);
   }
 }
+.USActive {
+  color: var(--green-logo) !important;
+}
 .app__navbar-menu {
   width: 35px;
   height: 35px;
-  border-radius: 50%; 
+  border-radius: 50%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-    
-  }
+}
 
-.motionDiv{
+.motionDiv {
   position: fixed;
   top: 0;
-  bottom: 0; 
+  bottom: 0;
   right: 0;
   z-index: 0;
   padding: 1rem;
@@ -192,21 +207,19 @@ top: 0;
   height: 100vh;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end; 
+  align-items: flex-end;
   flex-direction: column;
   background-color: #ff0050;
   background-size: cover;
-  background-repeat: repeat;  
+  background-repeat: repeat;
 }
-.Language-changer{
+.Language-changer {
   position: relative;
-  a{
-
-  font-size: 0.9rem;
+  a {
+    font-size: 0.9rem;
   }
 }
-.button-languge{
-
+.button-languge {
   position: relative;
   right: 0;
   display: flex;
@@ -225,12 +238,11 @@ top: 0;
   border-radius: 45px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: all 0.25s ease-in-out ;
+  transition: all 0.25s ease-in-out;
 
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* default box-shadow */
   outline: none;
   @media screen and (max-width: 900px) {
- 
     display: none;
   }
 
@@ -239,38 +251,32 @@ top: 0;
     box-shadow: 0px 15px 20px rgba(182, 112, 0, 0.7);
     color: #fff;
     transform: translateY(-7px);
-    p{
+    p {
       color: #fff;
-
     }
   }
   &:active {
     transform: translateY(-1px);
   }
-  p{
+  p {
     color: #0c002f;
     font-size: 0.8rem;
-
   }
-  img{
+  img {
     width: 25px;
     margin-right: 8px;
     @media screen and (min-width: 3000px) {
       width: 40px;
     }
-
-
   }
   @media screen and (min-width: 3000px) {
     font-size: 3rem;
-    p{
+    p {
       font-size: 2rem;
-  
     }
   }
 }
-.button-languge-mobile{
-
+.button-languge-mobile {
   margin-top: 5px;
   margin-bottom: 10px;
   position: relative;
@@ -291,35 +297,30 @@ top: 0;
   border-radius: 45px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  transition: all 0.25s ease-in-out ;
+  transition: all 0.25s ease-in-out;
 
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); /* default box-shadow */
   outline: none;
   @media screen and (max-width: 900px) {
- 
   }
   &:hover {
     background-color: var(--blue-logo);
     box-shadow: 0px 15px 20px rgba(2, 0, 117, 0.7);
     color: #fff;
     transform: translateY(-7px);
-    p{
+    p {
       color: #fff;
-
     }
   }
   &:active {
     transform: translateY(-1px);
   }
-  p{
+  p {
     color: #0c002f;
     font-size: 0.8rem;
-
   }
-  img{
+  img {
     width: 25px;
     margin-right: 8px;
-
-
   }
 }

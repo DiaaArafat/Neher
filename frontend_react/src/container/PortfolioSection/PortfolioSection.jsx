@@ -1,9 +1,9 @@
 import React from "react";
 import "./PortfolioSection.scss";
-import PortfolioCards from "../../componants/PortfolioCards/PortfolioCards";
 import PortfolioCards2 from "../../componants/PortfolioCards2/PortfolioCards";
 import { useState, useEffect } from "react";
 import NavigationDots from "../../componants/NavigationDots/NavigationDots";
+import { NavLink } from "react-router-dom";
 function PortfolioSection() {
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
@@ -23,12 +23,15 @@ function PortfolioSection() {
   return (
     <div className="portfolioSection" id="portfolio">
       <div className="leftSideContentPortfolio">
-        <h1         data-aos="zoom-in"
-          data-aos-duration="800">Portfolio </h1>
-        <div className="portfolio-section-butttons"        
-           data-aos="zoom-in"
-          data-aos-duration="800">
-          <div className="filter-buttons" >
+        <h1 data-aos="zoom-in" data-aos-duration="800">
+          Portfolio{" "}
+        </h1>
+        <div
+          className="portfolio-section-butttons"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+        >
+          <div className="filter-buttons">
             {["All", "Animation", "Belgsee", "Production"].map(
               (item, index) => (
                 <button
@@ -43,16 +46,18 @@ function PortfolioSection() {
               )
             )}
           </div>
-          <button className="button-more">Show All</button>
+          <a href="/portfolio"> 
+  
+            <button className="button-more" >
+              Show All
+            </button>
+          </a>
         </div>
-        <div
-          className="portfolioSectionCards"
-        >
+        <div className="portfolioSectionCards">
+          <PortfolioCards2 duration="800" />
           <PortfolioCards2 duration="1000" />
           <PortfolioCards2 duration="1300" />
-          <PortfolioCards2 duration="1600" />
-          <PortfolioCards2 duration="1700" />
-
+          <PortfolioCards2 duration="1500" />
         </div>
       </div>
       <NavigationDots active={"portfolio"} section={"portfolioSideNav"} />
