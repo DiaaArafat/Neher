@@ -14,6 +14,7 @@ import LandingPage from "./componants/LandingPage/LandingPage";
 import Home from "./Home";
 import ServicesFullPage from "./container/ServicesFullPage/ServicesFullPage";
 import ContactUsFullPage from "./container/ContactUsFullPage/ContactUsFullPage";
+import ClientsFullPage from "./container/ClientsFullPage/ClientsFullPage";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <ServicesFullPage />,
+      },
+      {
+        path: `/clients`,
+        element: <ClientsFullPage />,
       },
       {
         path: "/portfolio",
